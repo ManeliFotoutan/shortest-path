@@ -30,13 +30,10 @@ Each algorithm builds a graph, computes the shortest path between given start an
 
 ---
 
-## Installation
-
+Installation
 Make sure you have Python 3 installed. Install the required dependencies using pip:
 
-\`\`\`bash
 pip install matplotlib networkx sortedcontainers
-\`\`\`
 
 ---
 
@@ -50,7 +47,7 @@ pip install matplotlib networkx sortedcontainers
 
 Example snippet:
 
-\`\`\`python
+```bash
 g = Graph()
 g.add_edge(1, 2, 1)
 g.add_edge(2, 3, 2)
@@ -61,7 +58,7 @@ distances, path, path_edges = g.dijkstra(1, 3)
 draw_graph(g.graph, path_edges=path_edges)
 print(f\"Shortest distance: {distances[3]}\")
 print(f\"Path: {path}\")
-\`\`\`
+```
 
 ---
 
@@ -73,7 +70,7 @@ print(f\"Path: {path}\")
 
 Example:
 
-\`\`\`python
+```bash
 g = Graph()
 g.add_edge(0, 1, 1)
 g.add_edge(0, 2, 1)
@@ -84,7 +81,7 @@ g.add_edge(2, 3, 5)
 path, distance = g.bfs(0, 3)
 print(f\"Shortest path: {path} with distance: {distance}\")
 g.plot_graph(path, 'graph_bfs.png')
-\`\`\`
+```
 
 ---
 
@@ -96,7 +93,7 @@ g.plot_graph(path, 'graph_bfs.png')
 
 Example:
 
-\`\`\`python
+```bash
 g = Graph()
 g.add_edge(0, 3, 2)
 g.add_edge(0, 2, 5)
@@ -111,7 +108,7 @@ if isinstance(result, tuple):
     g.plot_graph(path, 'graph_dfs.png')
 else:
     print(result)
-\`\`\`
+```
 
 ---
 
