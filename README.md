@@ -1,4 +1,4 @@
-echo "# Graph Shortest Path Algorithms Visualization
+# shortest-path
 
 ## Project Overview
 
