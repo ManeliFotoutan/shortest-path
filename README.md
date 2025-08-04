@@ -10,7 +10,6 @@ This project implements and visualizes three different algorithms for finding th
 
 Each algorithm builds a graph, computes the shortest path between given start and end nodes, and visualizes the graph highlighting the shortest path using \`networkx\` and \`matplotlib\`.
 
----
 
 ## Features
 
@@ -32,10 +31,9 @@ Each algorithm builds a graph, computes the shortest path between given start an
 
 Installation
 Make sure you have Python 3 installed. Install the required dependencies using pip:
-
+```bash
 pip install matplotlib networkx sortedcontainers
-
----
+```
 
 ## Usage
 
@@ -60,7 +58,6 @@ print(f\"Shortest distance: {distances[3]}\")
 print(f\"Path: {path}\")
 ```
 
----
 
 ### BFS-based Shortest Path
 
@@ -83,7 +80,6 @@ print(f\"Shortest path: {path} with distance: {distance}\")
 g.plot_graph(path, 'graph_bfs.png')
 ```
 
----
 
 ### DFS-based Shortest Path
 
@@ -110,8 +106,6 @@ else:
     print(result)
 ```
 
----
-
 ## Dependencies
 
 - \`matplotlib\` - for plotting and saving graph images
@@ -119,7 +113,6 @@ else:
 - \`sortedcontainers\` - used in AVL tree implementation (if needed)
 - \`heapq\` - standard Python library for priority queues
 
----
 
 ## Project Structure
 
@@ -127,7 +120,6 @@ else:
 - \`Graph\` class contains graph methods for adding edges and running shortest path algorithms.
 - Visualization functions use \`networkx\` and \`matplotlib\` to plot graphs and highlight paths.
 
----
 
 ## Notes
 
